@@ -1,11 +1,13 @@
+const { connected } = require('process');
 var request = require('request');
-request("http://www.google.com", function(error, response, body)
-{
-  if(!error)
+request("", function(error, response, body){
+  if(!error && response.statusCode=="200")
   {
-    console.log("Hey, It's working smoothly!!");
+    var parsedData = JSON.parse(body);
+    console.log(parsedData);
   }
-  else{
+  else
+  {
     console.log("something went wrong!!");
   }
-})
+});
