@@ -1,13 +1,9 @@
-const { connected } = require('process');
-var request = require('request');
-request("", function(error, response, body){
-  if(!error && response.statusCode=="200")
-  {
-    var parsedData = JSON.parse(body);
-    console.log(parsedData);
-  }
-  else
-  {
-    console.log("something went wrong!!");
-  }
-});
+const requestPromise = require('request-promise');
+requestPromise("https://jsonplaceholder.typicode.com/users/1")
+ .then((body) =>{
+    const parsedData = JSON.parse(body);
+    console.log(`${parsedData.name} lives in ${parsedData.address.city}`);
+  })
+  .catch((err) =>{
+    console.log('something went wrong!!', err);
+  });
