@@ -1,12 +1,13 @@
 $(document).ready(function () {
   // Get JSON data from url
-  
+
   $.getJSON("https://api.covid19india.org/data.json", function (data) {
     var states = [];
     var confirmed = [];
     var recovered = [];
     var deaths = [];
 
+    
     var total_active;
     var total_confirmed;
     var total_recovered;
