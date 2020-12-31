@@ -1,5 +1,6 @@
 $(document).ready(function () {
   // Get JSON data from url
+  
   $.getJSON("https://api.covid19india.org/data.json", function (data) {
     var states = [];
     var confirmed = [];
