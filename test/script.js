@@ -4,11 +4,11 @@ var isBlue = false;
 setInterval(function(){
   if(isBlue)
   {
-    body.style.background="white";
+    body.style.backgroundColor="white";
   }
   else
   {
-    body.style.background="blue";
+    body.style.backgroundColor="#3498db";
   }
   isBlue=!isBlue;
 }, 1000);
