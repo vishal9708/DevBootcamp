@@ -1,14 +1,22 @@
-var body = document.querySelector("body");
-var isBlue = false;
+function getRandomColor(){
+  var color ='#';
+  color+=Math.floor(100000+Math.random()*900000);
+  return color;
+}
 
 setInterval(function(){
-  if(isBlue)
-  {
-    body.style.backgroundColor="white";
+  document.querySelector('h1').style.backgroundColor=getRandomColor();
+}, 500);
+
+
+
+/*var isBlue = false;
+setInterval(() => {
+  if(!isBlue){
+    document.querySelector('h1').style.backgroundColor="blue";
   }
-  else
-  {
-    body.style.backgroundColor="#3498db";
+  else{
+     document.querySelector('h1').style.backgroundColor="red";
   }
   isBlue=!isBlue;
-}, 1000);
+}, 300);*/
