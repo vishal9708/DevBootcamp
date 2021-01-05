@@ -1,3 +1,11 @@
+
+
+
+
+
+
+//for all color blinking
+/*
 function getRandomColor(){
   var color ='#';
   color+=Math.floor(100000+Math.random()*900000);
@@ -8,9 +16,10 @@ setInterval(function(){
   document.querySelector('h1').style.backgroundColor=getRandomColor();
 }, 500);
 
-
-
-/*var isBlue = false;
+----------------------------------------------------------------------------------------
+//for blue,red blinking
+/*
+var isBlue = false;
 setInterval(() => {
   if(!isBlue){
     document.querySelector('h1').style.backgroundColor="blue";
