@@ -9,6 +9,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "jquery": "^3.5.1",
     "modules": "^0.4.0",
     "node": "^15.4.0"
   }

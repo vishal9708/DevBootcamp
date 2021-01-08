@@ -1,0 +1,11 @@
+.someclass{
+  color: red;
+  font-size: 40px;
+  background-color: blue;
+  border: 10px solid pink;
+  text-align: center;
+}
+img{
+  width: 250px;
+  height: 170px;
+}

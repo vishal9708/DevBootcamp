@@ -1,0 +1,9 @@
+div{
+  width: 20%;
+  background-color: blue;
+  min-height: 100px;
+  float: left;
+  margin: 4%;
+  text-align: center;
+  border: 3px solid pink;
+}
