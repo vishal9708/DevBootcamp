@@ -1,5 +1,6 @@
 $('button').on("click",function(){
-  $('div').fadeToggle(1000,function() {
-    console.log("fade is successfully done!");
-  });
-})
+  $('button').text("click me to toggle");
+  $('.part').slideToggle(1000,function(){
+    console.log("slide toggled successfully!!");
+  })
+});
